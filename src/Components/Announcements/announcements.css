@@ -66,6 +66,8 @@
     text-overflow: ellipsis;
 }
 
+
+
 @media screen and (max-width: 768px) {
   .announcement {
     flex-direction: column-reverse;
