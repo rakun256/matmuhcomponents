@@ -7,7 +7,7 @@ const ResearchComp = ({research}) => {
   return (
     <div className='research-card' key={research.id}>
       <div className='research-card-title '> {research.title}</div>
-      <div className='research-card-description'>{research.description}</div>
+      <div className="research-card-description">{research.description.length > 200 ? `${research.description.substring(0, 200)}...` : research.description}</div>
     </div>
   );
 };

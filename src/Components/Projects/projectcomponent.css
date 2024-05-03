@@ -2,8 +2,8 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    width: 15em;
-    height: 30em;
+    width: 17em;
+    height: 34em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +11,8 @@
     margin: 1em;
     cursor: pointer;
 }
+
+
 
 .project-container-title {
     padding: 0.5em;
@@ -22,7 +24,7 @@
 
 .project-container-image {
     overflow: hidden;
-    width: 15em;
+    width: 17em;
     height: 30em;
     object-fit: contain;
     display: flex;

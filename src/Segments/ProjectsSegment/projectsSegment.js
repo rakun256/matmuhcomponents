@@ -21,7 +21,7 @@ const ProjectsComponent = ({ project }) => {
                 )}
             </div>
             <div className="project-container-title">{project.name}</div>
-            <div className="project-container-subtitle">{project.description}</div>
+            <div className="project-container-subtitle">{project.description.length > 200 ? `${project.description.substring(0, 200)}...` : project.description}</div>
             <div className="project-container-subtitle">{formattedDate}</div>
         </div>
         

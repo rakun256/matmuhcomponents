@@ -11,6 +11,7 @@ const ProjectComponent = ({ project }) => {
       month: "2-digit",
       year: "numeric"
     });
+    
 
     return (
         <div className="project-container" key={project.id}>
@@ -20,11 +21,12 @@ const ProjectComponent = ({ project }) => {
                 )}
             </div>
             <div className="project-container-title">{project.name}</div>
-            <div className="project-container-subtitle">{project.description}</div>
+            <div className="project-container-subtitle">{project.description.length > 250 ? `${project.description.substring(0, 250)}...` : project.description}</div>
             <div className="project-container-subtitle">{formattedDate}</div>
         </div>
     );
 };
+
 
 
 
